@@ -81,41 +81,37 @@
         </div>
         <!--Skills -->
         <h3 class="w3-center nextHeader">SKILLS</h3>
-        <table class="dataTable">
-            <tr>
-                <th class="w3-large w3-padding-16">Technologies</th>
-                <th class="w3-large w3-padding-16">Frameworks & Libraries</th>
-                <th class="w3-large w3-padding-16">Languages</th>
-            </tr>
-            <tr>
-                <td>
-                    <p class="w3-wide skill">Visual Studio</p>
-                    <p class="w3-wide skill">Android Studio</p>
-                    <p class="w3-wide skill">Unity</p>
-                    <p class="w3-wide skill">SQL Server</p>
-                    <p class="w3-wide skill">Visio</p>
-                    <p class="w3-wide skill">GitHub</p>
-                    <p class="w3-wide skill">Team Foundation Server</p>
-                    <p class="w3-wide skill">Photoshop & GIMP</p>
-                </td>
-                <td>
-                    <p class="w3-wide">.NET Framework</p>
-                    <p class="w3-wide">React</p>
-                    <p class="w3-wide">Angular</p>
-                    <p class="w3-wide">jQuery</p>
-                </td>
-                <td>
-                    <p class="w3-wide">C#</p>
-                    <p class="w3-wide">HTML</p>
-                    <p class="w3-wide">CSS</p>
-                    <p class="w3-wide">SQL</p>
-                    <p class="w3-wide">Javascript</p>
-                    <p class="w3-wide">Java</p>
-                    <p class="w3-wide">C++</p>
-                    <p class="w3-wide">ASPX</p>
-                </td>
-            </tr>
-        </table>
+        <div class="skillsContainer">        
+            <div class="skillsChildren">
+                <div class="skillsGrandChildren w3-large">Technologies</div>
+                <div class="skillsGrandChildren w3-wide">Visual Studio</div>
+                <div class="skillsGrandChildren w3-wide">Android Studio</div>
+                <div class="skillsGrandChildren w3-wide">Unity</div>
+                <div class="skillsGrandChildren w3-wide">SQL Server</div>
+                <div class="skillsGrandChildren w3-wide">Visio</div>
+                <div class="skillsGrandChildren w3-wide">GitHub</div>
+                <div class="skillsGrandChildren w3-wide">Team Foundation Server</div>
+                <div class="skillsGrandChildren w3-wide">Photoshop & GIMP</div>
+            </div>
+            <div class="skillsChildren">
+                <div class="skillsGrandChildren w3-large">Frameworks & Libraries</div>
+                <div class="skillsGrandChildren w3-wide">.NET Framework</div>
+                <div class="skillsGrandChildren w3-wide">React</div>
+                <div class="skillsGrandChildren w3-wide">Angular</div>
+                <div class="skillsGrandChildren w3-wide">jQuery</div>
+            </div>
+            <div class="skillsChildren">
+                <div class="skillsGrandChildren w3-larges">Languages</div>
+                <div class="skillsGrandChildren w3-wide">C#</div>
+                <div class="skillsGrandChildren w3-wide">TML</div>
+                <div class="skillsGrandChildren w3-wide">CSS</div>
+                <div class="skillsGrandChildren w3-wide">SQL</div>
+                <div class="skillsGrandChildren w3-wide">Javascript</div>
+                <div class="skillsGrandChildren w3-wide">Java</div>
+                <div class="skillsGrandChildren w3-wide">C++</div>
+                <div class="skillsGrandChildren w3-wide">ASPX</div>
+            </div>
+        </div>
     </div>
 
     <!-- Second Parallax Image with Portfolio Text -->
@@ -127,8 +123,8 @@
         <h3 class="w3-center">PORTFOLIO</h3>
         <p class="w3-center"><em>Here are some of my personal projects.</em></p><br>
 
-        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-        <div class="grid">
+        <!-- Responsive Grid. Uses CSS Grid to resize based on screen size -->
+        <div class="projectGrid">
             <div class="panel">
                 <a href="https://aachua.github.io/Javscript-Drum-Kit/" target="_blank">
                     <img src="images/DrumKit.PNG" class="w3-hover-opacity">

@@ -90,17 +90,42 @@ td:last-child {
   }
 }
 
-.grid {
+.projectGrid {
   display:grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap:20px;
-  }
-  
-  .panel {
- 
   }
 
   .panel > a > img{
     width:100%;
     height:100%;
+  }
+
+  .skillsContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+  }
+
+  .skillsChildren{
+    padding:16px;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .skillsGrandChildren{
+    flex:1;
+  }
+
+  .skillsContainer > div:first-child{
+    border-right:1px solid black;
+  }
+  
+  .skillsContainer > div:last-child{
+    border-left:1px solid black;
   }
