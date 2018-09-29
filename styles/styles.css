@@ -109,6 +109,16 @@ td:last-child {
     flex-wrap:wrap;
   }
 
+  .skillsContainer > div:first-child{
+    border-right:1px solid black;
+    flex:2
+  }
+  
+  .skillsContainer > div:last-child{
+    border-left:1px solid black;
+    flex:2
+  }
+
   .skillsChildren{
     padding:16px;
     flex:1;
@@ -118,14 +128,11 @@ td:last-child {
     flex-direction: column;
   }
 
+  .skillsChildren > div:first-child{
+    margin-bottom:12px;
+  }
+
   .skillsGrandChildren{
     flex:1;
   }
 
-  .skillsContainer > div:first-child{
-    border-right:1px solid black;
-  }
-  
-  .skillsContainer > div:last-child{
-    border-left:1px solid black;
-  }
