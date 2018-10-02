@@ -1,3 +1,5 @@
+*, *::before, *::after {box-sizing: border-box};
+
 body,
 h1,
 h2,
@@ -98,8 +100,43 @@ td:last-child {
 
 .panel{
   position:relative;
-  border:1px solid red;
   background-color:black;
+  justify-content:center;
+  vertical-align:center;
+}
+
+.panel::before, .panel::after{
+  pointer-events:none;
+  content: '';
+  position: absolute;
+  top: 1.25em;
+  bottom: 1.25em;
+  left: 1.25em;
+  right: 1.25em;
+}
+
+.panel::before{
+  transform:scale(0,1);
+  transition: transform ease-out 250ms;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  z-index: 1;
+}
+
+.panel::after{
+  transform:scale(0,1);
+  transition: transform ease-out 250ms;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  z-index: 1;
+}
+
+.panel:hover::before{
+  transform: scale(1,1);
+}
+
+.panel:hover::after{
+  transform: scale(1,1);
 }
 
 .panelImage{
@@ -109,7 +146,7 @@ td:last-child {
   opacity:1;
 }
 
-.panelImage:hover{
+.panel:hover .panelImage{
   opacity:0.7;
 }
 
@@ -121,7 +158,6 @@ td:last-child {
   opacity:0;
   transition: opacity ease-out 250ms;
   z-index:1;
-  pointer-events: none;
 }
 
 .panel:hover .content{
