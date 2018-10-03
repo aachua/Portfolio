@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="styles/styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.1/dist/jquery.fancybox.min.css" />
 
 <body>
     <!-- Navbar (sit on top) -->
@@ -47,9 +48,9 @@
         <p class="w3-center"><em>Hi! I'm Anthony Chua</em></p>
         <p class="w3-center">Recent graduate at the University of Michigan Dearborn
             with a bachelors degree in computer science. Worked with various project teams to create a wide array of
-            software. Experienced in the full lifecycle of software development. Fortunate to have gained professional
+            software. Experienced in the full life cycle of software development. Fortunate to have gained professional
             experience through an apprenticeship and was able to obtain skills that can't be taught in a classroom.
-            Constantly tries to keep up with the latest technologies and languages by experimeting with new projects.</p>
+            Constantly tries to keep up with the latest technologies and languages by experimenting with new projects.</p>
         <p></p>
         <!--Experience -->
         <h3 class="w3-center nextHeader">EXPERIENCE</h3>
@@ -145,39 +146,50 @@
             </div>
 
             <div class="panel">
-                <a> 
+                <a href="images/TankDestroyer.png" data-fancybox="tankGallery" data-caption="2 player tank battle game written in C# and using Monogame"> 
                     <div class="content">
                         <h2 class="content-body">Tank Destroyer</h2>
                     </div>
                     <img src="images/TankDestroyer.png" class="panelImage">
                 </a>
+                
+                <a href="images/TankDestroyer2.PNG" data-fancybox="tankGallery" data-caption="Game has 2 possible maps to play on"></a>
+                <a href="images/TankDestroyer3.PNG" data-fancybox="tankGallery" data-caption="Map contains 3 random spawning bombs that will damage the player when ran over. There is also 1 medpack in the middle of the map. Health bars appear in the corners and match the color of the player"></a>
+                <a href="images/TankDestoyer4.PNG" data-fancybox="tankGallery"></a>
             </div>
 
             <div class="panel">
-                <a>
+                <a href="images/CatShopping.png" data-fancybox="catGallery" data-caption="Cat themed website created using PHP, HTML, CSS, and Javascript">
                     <div class="content">
                         <h2 class="content-body">Cat Website</h2>
                     </div>
                     <img src="images/CatShopping.PNG" class="panelImage">
                 </a>
+                <a href="images/CatShopping2.PNG" data-fancybox="catGallery" data-caption="Webite uses MySQL database to save account information"></a>
+                <a href="images/CatShopping3.PNG" data-fancybox="catGallery" data-caption="The 'Food, Toys and Supplies' tabs all have products that can be added to the cart"></a>
+                <a href="images/CatShopping4.PNG" data-fancybox="catGallery" data-caption="Website uses simplecart.js and allows incrementing/decrementing/removing items "></a>
             </div>
 
             <div class="panel">
-                <a>
+                <a href="images/CatShopping_Mobile.png" data-fancybox="catMobile" data-caption="Cat themed shopping mobile application that runs on android">
                     <div class="content">
                         <h2 class="content-body">Cat Website Mobile</h2>
                     </div>
-                    <img src="images/CatShopping_Mobile0.PNG" class="panelImage">
+                    <img src="images/CatShopping_Mobile.PNG" class="panelImage">
                 </a>
+                <a href="images/CatShopping_Mobile1.PNG" data-fancybox="catMobile"></a>
+                <a href="images/CatShopping_Mobile2.PNG" data-fancybox="catMobile" data-caption="Cart allows deleting items and checking out order"></a>
             </div>
 
             <div class="panel">
-                <a>
+                <a href="images/RPG_Mobile.png" data-fancybox="rpg" data-caption="RPG class creation mobile application that runs on android ">
                     <div class="content">
                         <h2 class="content-body">RPG Class Creation</h2>
                     </div>
                     <img src="images/RPG_Mobile.PNG" class="panelImage">
                 </a>
+                <a href="images/RPG_Mobile2.PNG" data-fancybox="rpg" data-caption="Uses fragments to split the view into seperate windows when using phone instead of tablet"></a>
+                <a href="images/RPG_Mobile3.PNG" data-fancybox="rpg"></a>
             </div>
         </div>
     </div>
@@ -222,6 +234,8 @@
             the top</a>
     </footer>
     <script src="scripts/script.js"></script>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.1/dist/jquery.fancybox.min.js"></script>
 </body>
 
 </html>
