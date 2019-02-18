@@ -31,7 +31,7 @@ html {
 .bgimg-1 {
   /*image provided by jesus kiteque on unsplash*/
   background-image: url("../images/glasses.jpg");
-  min-height: 100%;
+  min-height: 400px;
 }
 
 /* Second image (Portfolio) */
