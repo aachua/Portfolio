@@ -182,12 +182,12 @@ td:last-child {
 
 .skillsContainer > div:first-child{
   border-right:1px solid black;
-  flex:2
+  flex:2;
 }
 
 .skillsContainer > div:last-child{
   border-left:1px solid black;
-  flex:2
+  flex:2;
 }
 
 .skillsChildren{
